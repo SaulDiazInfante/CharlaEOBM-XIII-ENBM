@@ -1,0 +1,89 @@
+\documentclass[10pt]{beamer}
+\usetheme[progressbar=frametitle]{metropolis}
+\includeonlyframes{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%					Preambulo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[spanish,activeacute]{babel}
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+\usepackage{wrapfig}
+\usepackage{siunitx}
+\usepackage{times}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage{thumbpdf}
+\usepackage{wasysym}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{url}
+\usepackage{empheq}
+\usepackage{fancybox}
+\usepackage{esint}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{mathptmx}
+\usepackage{helvet}
+\usepackage{tikz}%
+\usepackage{circuitikz}
+\usepackage{csvsimple}
+\usepackage{pgfplots}
+\usepackage{multimedia}
+\usepackage{media9}
+\usepackage{proba}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{bibunits}
+\usepackage{tcolorbox}
+% \usepackage[
+%texcoord,
+%grid, gridunit=mm,gridcolor=red!60,subgridcolor=green!60]%
+% {eso-pic}
+\usepackage[makeroom]{cancel}
+\usepackage{epstopdf}
+\epstopdfsetup{outdir=./}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\title{Un Modelo Estocástico para la Reconstrucción de Masa Osea}
+\subtitle{XIX EOBM/XIII ENBM}
+\date{Octubre 12 2017}
+\author{Saúl Díaz Infante Velasco}
+\institute{CONACYT-Universidad de Sonora}
+\titlegraphic{%
+\hfill\includegraphics[height=1.0cm]{./figures/bar_background.png}
+}
+\metroset{block=fill}
+\input{setup}
+\defaultbibliography{CharlaBib}
+\defaultbibliographystyle{abbrv}
+\begin{document}
+	\maketitle
+ 	\section*{Introducción}
+		\input{./Introduccion/procesoDeRemodelacion.tex}
+		\input{./Introduccion/diagramaRemodelacion.tex}
+		\input{./Introduccion/modeloKomarova.tex}
+		\input{./Introduccion/modeloSilvia.tex}
+		\input{./Introduccion/objetivo.tex}
+ 	%\section{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{frame}{Esquema de Charla}
+   		\setbeamertemplate{section in toc}[sections numbered]
+   		\tableofcontents[hideallsubsections]
+ 	\end{frame}
+ 	\section{Perturbación estocástica}
+		\input{./Perturbacion/JustificacionRuido.tex}
+		\input{./Perturbacion/Alternativas.tex}
+		\input{./Perturbacion/perturbacion.tex}
+ 	\section{Propiedades de la solución}
+		\input{./PropiedadesSolucion/positividad.tex}
+ 	\section{Resultados numéricos}
+		\input{./ResultadosNumericos/resultadosNumericos.tex}
+ 	\section{Comentarios Finales}
+		\input{./ComentariosFinales/comentarios_finales.tex}
+\end{document}

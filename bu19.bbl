@@ -1,0 +1,11 @@
+ \newcommand{\noop}[1]{}
+\begin{thebibliography}{JDICCed}
+
+\bibitem[JDICCed]{Jerez2017}
+Silvia Jerez, Saul Diaz-Infante, and Benito Chen-Charpentier.
+\newblock {Fluctuating periodic solutions and moment boundedness of a
+  stochastic model for the bone remodeling process}.
+\newblock {\em Elsevier Journal of Mathematical Analysis and Applications},
+  \noop{2017}submitted.
+
+\end{thebibliography}
